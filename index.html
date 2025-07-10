@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script>
+      (function () {
+        emailjs.init("VJ_EOMGqPkyXbWrvD"); // replace with your actual public key
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo" style="outline: none !important;">Siba Prasad<span>Nayak</span></a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm <span>Siba Prasad Nayak</span></h1>
+          <p>
+            I'm a passionate .NET full-stack developer who builds smart,
+            user-focused web applications that turn ideas into reliable,
+            real-world solutions.
+          </p>
+          <div class="hero-buttons">
+            <a href="#project" class="btn">View My Work</a>
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="../assets/Siba Prasad Nayak Resume.pdf" class="btn"
+              ><i class="fa-solid fa-download"></i>Download Resume</a
+            >
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="../assets/Photo.webp" alt="Siba Prasad Nayak Photo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <p>Get to know the developer behind the code</p>
+      </div>
+      <div class="about-content">
+        <div class="about-column">
+          <!-- Enhanced Who am I section -->
+          <div class="profile-intro">
+            <div class="profile-icon">
+              <i class="fa-solid fa-circle-user"></i>
+            </div>
+            <h3>Who am I?</h3>
+          </div>
+
+          <div class="intro-cards">
+            <div class="intro-card">
+              <div class="card-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h4>Full-Stack Developer</h4>
+              <p>
+                Specializing in the .NET ecosystem with hands-on experience in
+                building secure, scalable web applications using ASP.NET MVC,
+                C#, Entity Framework, and SQL Server.
+              </p>
+            </div>
+
+            <div class="intro-card">
+              <div class="card-icon">
+                <i class="fas fa-palette"></i>
+              </div>
+              <h4>Frontend Craftsmanship</h4>
+              <p>
+                Creating responsive and user-friendly interfaces with HTML, CSS,
+                JavaScript, and Bootstrap - blending functionality with clean
+                design.
+              </p>
+            </div>
+
+            <div class="intro-card">
+              <div class="card-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h4>Solution Builder</h4>
+              <p>
+                Passionate about building real-world digital solutions from
+                intelligent job portals to enterprise dashboards that are not
+                just efficient, but truly impactful.
+              </p>
+            </div>
+          </div>
+
+          <div class="skills-section">
+            <h3><i class="fas fa-tools"></i> My Skills</h3>
+            <div class="skills-categories">
+              <div class="skill-category">
+                <h4>Backend</h4>
+                <div class="skills-grid">
+                  <span class="skill">C# .NET</span>
+                  <span class="skill">ASP.NET Core</span>
+                  <span class="skill">ADO.NET</span>
+                  <span class="skill">MVC</span>
+                  <span class="skill">WCF</span>
+                  <span class="skill">Entity Framework</span>
+                  <span class="skill">REST APIs</span>
+                  <span class="skill">SQL Server</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4>Frontend</h4>
+                <div class="skills-grid">
+                  <span class="skill">HTML5</span>
+                  <span class="skill">CSS3</span>
+                  <span class="skill">JavaScript</span>
+                  <span class="skill">Bootstrap</span>
+                  <span class="skill">jQuery</span>
+                  <span class="skill">React Js</span>
+                  <span class="skill">Responsive Design</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4>Tools</h4>
+                <div class="skills-grid">
+                  <span class="skill">Git</span>
+                  <span class="skill">VS Code</span>
+                  <span class="skill">Visual Studio</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enhanced Education Section -->
+        <div class="about-column">
+          <div class="education-header">
+            <div class="education-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Education Journey</h3>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-badge">2024</div>
+                <h4>.NET Full-Stack Certification</h4>
+                <div class="institution">
+                  <i class="fas fa-building"></i>
+                  A2R Software Consulting Pvt. Ltd.
+                </div>
+                <p>
+                  Comprehensive training in ASP.NET MVC, C#, SQL Server, and
+                  modern frontend technologies with hands-on project experience.
+                </p>
+                <div class="timeline-skills">
+                  <span class="timeline-skill">ASP.NET MVC</span>
+                  <span class="timeline-skill">C#</span>
+                  <span class="timeline-skill">SQL Server</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-badge">2022-2024</div>
+                <h4>Master of Computer Application</h4>
+                <div class="institution">
+                  <i class="fas fa-university"></i>
+                  Biju Patnaik University of Technology, Rourkela
+                </div>
+                <p>
+                  Specialized in Software Engineering with focus on web
+                  development, full-stack design, and database systems.
+                  Graduated with honors.
+                </p>
+                <div class="timeline-skills">
+                  <span class="timeline-skill">Software Engineering</span>
+                  <span class="timeline-skill">Web Development</span>
+                  <span class="timeline-skill">Database Systems</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-badge">2019-2022</div>
+                <h4>Bachelor of Science</h4>
+                <div class="institution">
+                  <i class="fas fa-university"></i>
+                  Berhampur University, Berhampur
+                </div>
+                <p>
+                  Mathematics major - Built strong foundation in analytical
+                  thinking, logical problem-solving, and quantitative reasoning.
+                </p>
+                <div class="timeline-skills">
+                  <span class="timeline-skill">Mathematics</span>
+                  <span class="timeline-skill">Analytical Thinking</span>
+                  <span class="timeline-skill">Problem Solving</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-badge">2017-2019</div>
+                <h4>Intermediate</h4>
+                <div class="institution">
+                  <i class="fas fa-university"></i>
+                  Nalanda +2 Science College, Berhampur
+                </div>
+                <p>
+                  Mathematics major - Built strong foundation in analytical
+                  thinking, logical problem-solving, and quantitative reasoning.
+                </p>
+                <div class="timeline-skills">
+                  <span class="timeline-skill">Physics</span>
+                  <span class="timeline-skill">Chemistry</span>
+                  <span class="timeline-skill">Computer Science</span>
+                  <span class="timeline-skill">Msthematics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+      <div class="section-title">
+        <h2>Professional Experience</h2>
+        <p>My journey in software development</p>
+      </div>
+      <div class="experience-grid">
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-title">
+              <h3>Frontend Developer</h3>
+              <div class="experience-company">
+                Wingherry Technologies Pvt. Ltd.
+              </div>
+            </div>
+            <div class="experience-date">May 2025 - Present</div>
+          </div>
+          <div class="experience-description">
+            <p>
+              Currently developing responsive web applications using jQuery,
+              JavaScript, and modern CSS frameworks. Collaborating with design
+              teams to implement pixel-perfect UI components and ensuring
+              cross-browser compatibility.
+            </p>
+          </div>
+          <div class="experience-skills">
+            <span class="skill-tag">jQuery</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML5/CSS3</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-title">
+              <h3>.NET Junior Developer Intern</h3>
+              <div class="experience-company">
+                A2R Software Consulting Pvt. Ltd.
+              </div>
+            </div>
+            <div class="experience-date">Aug 2024 - Apr 2025</div>
+          </div>
+          <div class="experience-description">
+            <p>
+              Completed a comprehensive 9-month internship focusing on .NET
+              development. Built web applications using C#, ASP.NET Core, and
+              SQL Server. Gained hands-on experience in full-stack development
+              and agile methodologies.
+            </p>
+          </div>
+          <div class="experience-skills">
+            <span class="skill-tag">C# .NET</span>
+            <span class="skill-tag">ASP.NET Core</span>
+            <span class="skill-tag">MVC</span>
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">Entity Framework</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="section" id="project">
+      <div class="section-title">
+        <h2>My Projects</h2>
+        <p>A showcase of my recent projects and achievements</p>
+      </div>
+      <div class="project-grid">
+        <div class="project-item">
+          <div class="project-img">
+            <img src="../assets/Yuktesh.webp" alt="Project 1" />
+          </div>
+          <div class="project-info">
+            <h3>Yuktesh Cement Brick Manufacturing</h3>
+            <p>
+              Responsive enterprise website with integrated order management
+              system for Yuktesh Cement Brick Manufacturing.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">emailjs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-img">
+            <img src="../assets/Job.webp" alt="Project 2" />
+          </div>
+          <div class="project-info">
+            <h3>Smart Job Portal System</h3>
+            <p>
+              An intelligent job matching platform that connects candidates and
+              recruiters through smart filters, automated shortlisting, and a
+              fully responsive user interface.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">ASP.NET MVC 5</span>
+              <span class="project-tag">C#</span>
+              <span class="project-tag">Entity Framework</span>
+              <span class="project-tag">SQL Server</span>
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">Bootstrap</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-img">
+            <img src="../assets/Learning.webp" alt="Project 3" />
+          </div>
+          <div class="project-info">
+            <h3>Learning Management System</h3>
+            <p>
+              Comprehensive LMS platform with course management, student
+              tracking, and interactive learning modules.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">C#</span>
+              <span class="project-tag">ASP.NET</span>
+              <span class="project-tag">SQL Server</span>
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">jQuery</span>
+              <span class="project-tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-img">
+            <img src="../assets/Restaurant.webp" alt="Project 4" />
+          </div>
+          <div class="project-info">
+            <h3>Restaurant Booking System</h3>
+            <p>
+              Complete restaurant management system with online reservations,
+              menu management, and customer feedback integration.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">ASP.NET MVC</span>
+              <span class="project-tag">C#</span>
+              <span class="project-tag">SQL Server</span>
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-img">
+            <img src="../assets/Weather.webp" alt="Project 5" />
+          </div>
+          <div class="project-info">
+            <h3>Weather Forecast App</h3>
+            <p>
+              Modern weather application with location-based forecasts,
+              interactive maps, and detailed weather analytics.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Weather API</span>
+              <span class="project-tag">Geolocation</span>
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-img">
+            <img src="../assets/Svm.webp" alt="Project 6" />
+          </div>
+          <div class="project-info">
+            <h3>Hindi Handwritten Numerical Recognition</h3>
+            <p>
+              SVM-based numeral recognition system optimized with Genetic
+              Algorithm for improved accuracy.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">OpenCV</span>
+              <span class="project-tag">Scikit-Learn</span>
+              <span class="project-tag">DEAP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="section-title">
+        <h2>Get In Touch</h2>
+        <p>Let's discuss your next project or collaboration opportunity</p>
+      </div>
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div style="text-align: center">
+            <button type="submit" class="btn">Send Message</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 2rem;
+          margin-top: 3rem;
+        "
+      >
+        <div class="glass" style="padding: 2rem; text-align: center">
+          <i
+            class="fas fa-envelope"
+            style="
+              font-size: 2rem;
+              color: var(--neon-blue);
+              margin-bottom: 1rem;
+            "
+          ></i>
+          <h4 style="color: var(--neon-blue); margin-bottom: 0.5rem">Gmail</h4>
+          <p>sibaprasadnayak402@gmail.com</p>
+        </div>
+        <div class="glass" style="padding: 2rem; text-align: center">
+          <i
+            class="fas fa-phone"
+            style="
+              font-size: 2rem;
+              color: var(--neon-purple);
+              margin-bottom: 1rem;
+            "
+          ></i>
+          <h4 style="color: var(--neon-purple); margin-bottom: 0.5rem">
+            Phone
+          </h4>
+          <p>+91 8455905586</p>
+        </div>
+        <div class="glass" style="padding: 2rem; text-align: center">
+          <i
+            class="fas fa-map-marker-alt"
+            style="
+              font-size: 2rem;
+              color: var(--neon-pink);
+              margin-bottom: 1rem;
+            "
+          ></i>
+          <h4 style="color: var(--neon-pink); margin-bottom: 0.5rem">
+            Location
+          </h4>
+          <p>Hyderabad, Telangana</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <!-- Column 1: About -->
+        <div class="footer-column">
+          <h3>Siba Prasad Nayak</h3>
+          <p>
+            Full-Stack Developer passionate about creating innovative digital
+            solutions with clean, efficient code.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/siba-prasad-nayak-053227240"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/_siba_nayak_"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
